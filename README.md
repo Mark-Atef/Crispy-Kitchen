@@ -300,9 +300,9 @@ Tested and working on:
 
 ## 🚀 Live Demo
 
-🔗 **[View Live Site](https://mark-atef.github.io/CrispyKitchen/)**
+🔗 **[View Live Site](https://mark-atef.github.io/Crispy-Kitchen/)**
 
-🧾 **[GitHub Repository](https://github.com/Mark-Atef/CrispyKitchen)**
+🧾 **[GitHub Repository](https://github.com/Mark-Atef/Crispy-Kitchen.git)**
 
 ---
 
