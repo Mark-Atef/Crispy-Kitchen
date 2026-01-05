@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Learn about Crispy Kitchen - Our story, values, and commitment to quality food since 2010." />
+    <meta name="author" content="Mark Yacoub">
+    <link rel="shortcut icon" href="images/download.ico" type="image/x-icon">
+    <title>About Us - Crispy Kitchen</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+
+<body>
+    <!-- Page Loader (shows while page loads) -->
+    <div class="page-loader" id="pageLoader">
+        <div>
+            <div class="spinner"></div>
+            <p class="loader-text">Loading...</p>
+        </div>
+    </div>
+
+    <!-- Skip to Content Link (accessibility) -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <header>
+        <nav class="navbar">
+            <div class="nav-logo">
+                <a href="index.html">Crispy Kitchen</a>
+            </div>
+
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!--  Hamburger Icon -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Cart Button -->
+            <div class="nav-cart">
+                <button class="cart-btn" id="cartBtn" aria-label="Shopping cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Mobile Menu Background Overlay -->
+    <div class="mobile-overlay-bg" id="mobileOverlay"></div>
+
+
+
+    <!-- main content -->
+
+    <main id="main-content">
+        <!-- About Hero Section -->
+        <section class="about-hero">
+            <div class="about-hero-content">
+                <h1>About Crispy Kitchen</h1>
+                <p>Serving delicious, healthy food with passion since 2010</p>
+            </div>
+        </section>
+
+        <!-- Our Story Section -->
+        <section class="our-story">
+            <div class="container">
+                <div class="story-content">
+                    <div class="story-text">
+                        <h2>Our Story</h2>
+                        <p class="lead-text">
+                            Crispy Kitchen was born from a simple idea: everyone deserves access to delicious,
+                            healthy food made with love and care.
+                        </p>
+                        <p>
+                            Founded in 2010 by passionate food lovers, we set out to create a restaurant that
+                            combines quality ingredients, expert culinary skills, and a warm, welcoming atmosphere.
+                            What started as a small neighborhood eatery has grown into a beloved destination for
+                            food enthusiasts across the city.
+                        </p>
+                        <p>
+                            Every dish we serve tells a story of dedication, creativity, and our unwavering
+                            commitment to excellence. From sourcing the freshest local ingredients to perfecting
+                            every recipe, we pour our hearts into everything we do.
+                        </p>
+                    </div>
+                    <div class="story-image">
+                        <img src="./images/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Restaurant interior">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="why-choose-us">
+            <div class="container">
+                <h2>Why Choose Crispy Kitchen</h2>
+                <p class="section-subtitle">Here's what makes us special</p>
+
+                <div class="features-flex">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <h3>Premium Quality</h3>
+                        <p>We use only the finest, freshest ingredients sourced from trusted local suppliers.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <h3>Fast Delivery</h3>
+                        <p>Hot, fresh meals delivered to your door in 30 minutes or less, guaranteed.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                        <h3>Fresh & Healthy</h3>
+                        <p>Every dish is prepared fresh daily with nutritious, wholesome ingredients.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <h3>Expert Chefs</h3>
+                        <p>Our talented culinary team brings years of experience and passion to every plate.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Values Section -->
+        <section class="our-values">
+            <div class="container">
+                <h2>Our Values</h2>
+                <p class="section-subtitle">The principles that guide everything we do</p>
+
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h3>Quality First</h3>
+                        <p>We never compromise on the quality of our ingredients or the care we put into preparation.
+                        </p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <h3>Made with Passion</h3>
+                        <p>Every meal is crafted with genuine love and enthusiasm for great food.</p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fa-solid fa-handshake"></i>
+                        </div>
+                        <h3>Community Focused</h3>
+                        <p>We're proud to be part of this community and committed to giving back.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section class="statistics">
+            <div class="container">
+                <div class="stats-flex">
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="10"></div>
+                        <div class="stat-label">Years of Excellence</div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="180000"></div>
+                        <div class="stat-label">Happy Customers</div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="15"></div>
+                        <div class="stat-label">Menu Items</div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="10"></div>
+                        <div class="stat-label">Expert Chefs</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Experience Crispy Kitchen?</h2>
+                    <p>Order now and taste the difference that passion and quality make.</p>
+                    <a href="menu.html" class="btn btn-primary btn-large">
+                        <i class="fa-solid fa-utensils"></i>
+                        View Our Menu
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Crispy Kitchen</h3>
+                <p>Delicious food made with Love.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p><i class="fa-solid fa-phone"></i> (555) 123-4567</p>
+                <p><i class="fa-solid fa-envelope"></i> info@crispykitchen.com</p>
+                <p><i class="fa-solid fa-location-dot"></i> 123 Food Street, City</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Crispy Kitchen. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <aside class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h2><i class="fa-solid fa-cart-shopping"></i> Shopping Cart</h2>
+            <button class="close-cart" id="closeCart" aria-label="Close cart">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <div class="cart-items" id="cartItems">
+            <p class="empty-cart">Your cart is empty</p>
+        </div>
+
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-price" id="totalPrice">$0.00</span>
+            </div>
+            <button class="btn btn-primary btn-checkout">
+                <i class="fa-solid fa-credit-card"></i>
+                Checkout
+            </button>
+        </div>
+    </aside>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- JavaScript -->
+    <script src="js/cart.js"></script>
+    <script src="js/about.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/mobile.js"></script>
+
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+</body>
+
+</html>

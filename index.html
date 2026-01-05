@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Crispy Kitchen - Delicious Food Made with Love and Specailized in Healthy Food Order Fresh & Delicious Meals online from top chefs." />
+  <meta name="author" content="Mark Yacoub">
+  <link rel="shortcut icon" href="images/download.ico" type="image/x-icon">
+  <title>Crispy Kitchen - Delicious Food Made with Love</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/mobile.css">
+</head>
+
+<body>
+  <!-- Page Loader (shows while page loads) -->
+  <div class="page-loader" id="pageLoader">
+    <div>
+      <div class="spinner"></div>
+      <p class="loader-text">Loading...</p>
+    </div>
+  </div>
+
+  <!-- Skip to Content Link (accessibility) -->
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+  <header>
+    <nav class="navbar">
+      <div class="nav-logo">
+        <a href="index.html">Crispy Kitchen</a>
+      </div>
+
+      <div class="nav-links">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!--  Hamburger Icon -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Cart Button -->
+      <div class="nav-cart">
+        <button class="cart-btn" id="cartBtn" aria-label="Shopping cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobileMenu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Mobile Menu Background Overlay -->
+  <div class="mobile-overlay-bg" id="mobileOverlay"></div>
+
+
+
+  <!-- main content -->
+
+  <main id="main-content">
+    <section class="home">
+      <div class="home-content">
+        <h1>Welcome to Crispy Kitchen</h1>
+        <p>Delicious food made with Love.</p>
+        <a href="menu.html" class="home-btn">Order Now</a>
+      </div>
+    </section>
+
+    <section class="about-preview">
+      <h2>About Us</h2>
+      <p class="p-about-container">
+        Crispy Kitchen serves delicious, fresh meals made with love and specialized in healthy food. Enjoy crispy
+        flavors crafted by top chefs using quality ingredients. Whether you're craving breakfast, lunch, or dinner,
+        we've got something for everyone. Order fresh and nutritious meals online and enjoy taste and health in every
+        bite.
+      </p>
+      <a href="about.html" class="btn btn-secondary">Learn More</a>
+    </section>
+
+    <section class="featured-menu">
+      <h2>Our Menu</h2>
+      <div class="menu-cards">
+        <article class="menu-card">
+          <img src="./images/farhad-ibrahimzade-MGKqxm6u2bc-unsplash.jpg"
+            alt="Morning special breakfast plate with eggs and toast" 
+            loading="lazy"
+            />
+          <div class="card-info">
+            <h3>Morning Special</h3>
+            <p class="card-description">Fresh breakfast to start your day</p>
+            <div class="card-footer">
+              <span class="price">$10.00</span>
+              <button class="btn btn-small add-to-cart" data-id="1" data-name="Morning Special" data-price="10.00">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="menu-card">
+          <img src="./images/brett-jordan-8xt8-HIFqc8-unsplash.jpg" alt="Lunch combo with burger and fries" loading="lazy"/>
+          <div class="card-info">
+            <h3>Lunch Combo</h3>
+            <p class="card-description">Perfect meal for lunch time</p>
+            <div class="card-footer">
+              <span class="price">$15.00</span>
+              <button class="btn btn-small add-to-cart" data-id="2" data-name="Lunch Combo" data-price="15.00">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="menu-card">
+          <img src="./images/keriliwi-c3mFafsFz2w-unsplash.jpg" alt="Grilled steak dinner with vegetables" loading="lazy"/>
+          <div class="card-info">
+            <h3>Steak Dinner</h3>
+            <p class="card-description">Premium steak with sides</p>
+            <div class="card-footer">
+              <span class="price">$22.00</span>
+              <button class="btn btn-small add-to-cart" data-id="3" data-name="Steak Dinner" data-price="22.00">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="view-full-menu">
+        <a href="menu.html" class="btn btn-secondary">View Full Menu</a>
+      </div>
+    </section>
+
+  </main>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Crispy Kitchen</h3>
+        <p>Delicious food made with Love.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contact Info</h4>
+        <p><i class="fa-solid fa-phone"></i> (555) 123-4567</p>
+        <p><i class="fa-solid fa-envelope"></i> info@crispykitchen.com</p>
+        <p><i class="fa-solid fa-location-dot"></i> 123 Food Street, City</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Crispy Kitchen. All rights reserved.</p>
+    </div>
+  </footer>
+  <!-- Cart Sidebar -->
+  <aside class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h2><i class="fa-solid fa-cart-shopping"></i> Shopping Cart</h2>
+      <button class="close-cart" id="closeCart" aria-label="Close cart">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="cart-items" id="cartItems">
+      <!-- Cart items will be dynamically added here by JavaScript -->
+      <p class="empty-cart">Your cart is empty</p>
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span class="total-price" id="totalPrice">$0.00</span>
+      </div>
+      <button class="btn btn-primary btn-checkout">
+        <i class="fa-solid fa-credit-card"></i>
+        Checkout
+      </button>
+    </div>
+  </aside>
+
+  <!-- Overlay for cart (darkens background) -->
+  <div class="overlay" id="overlay"></div>
+
+
+
+  <script src="js/cart.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/mobile.js"></script>
+
+  <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+</body>
+
+</html>

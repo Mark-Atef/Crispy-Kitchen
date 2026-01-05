@@ -1,0 +1,424 @@
+/* ==========================================
+   ABOUT PAGE STYLES
+   Create this as: css/about.css
+   ========================================== */
+
+/* Container */
+.container {
+    max-width: var(--max-width-container);
+    margin: 0 auto;
+    padding: 0 var(--spacing-xl);
+}
+
+/* About Hero Section */
+.about-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../images/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 120px var(--spacing-xl);
+    text-align: center;
+    color: var(--color-white);
+    position: relative;
+    top: 80px;
+}
+
+.about-hero-content {
+    animation: fadeInUp 1s ease;
+}
+
+.about-hero h1 {
+    font-size: 64px;
+    font-weight: var(--font-weight-black);
+    margin-bottom: var(--spacing-md);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.about-hero p {
+    font-size: var(--font-size-large);
+    opacity: 0.95;
+}
+
+/* Our Story Section */
+.our-story {
+    padding: var(--spacing-2xl) 0;
+    background-color: var(--color-white);
+}
+
+.story-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2xl);
+    align-items: center;
+}
+
+.story-text h2 {
+    font-size: var(--font-size-xlarge);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-gray);
+    margin-bottom: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+    text-align: center;
+}
+
+.lead-text {
+    font-size: var(--font-size-large);
+    color: var(--color-primary);
+    font-weight: var(--font-weight-medium);
+    margin-bottom: var(--spacing-lg);
+    line-height: 1.6;
+}
+
+.story-text p {
+    font-size: var(--font-size-medium);
+    color: var(--color-text-gray);
+    line-height: 1.8;
+    margin-bottom: var(--spacing-md);
+}
+
+.story-image {
+    border-radius: var(--radius-xlarge);
+    overflow: hidden;
+    box-shadow: var(--shadow-large);
+    animation: fadeIn 1s ease;
+    width: 90%;
+    height: 350px;
+}
+
+.story-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-slow);
+}
+
+.story-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    padding: var(--spacing-2xl) 0;
+    background-color: var(--color-bg-light);
+    text-align: center;
+}
+
+.why-choose-us h2 {
+    font-size: var(--font-size-xlarge);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-dark);
+    margin-bottom: var(--spacing-sm);
+}
+
+.section-subtitle {
+    font-size: var(--font-size-medium);
+    color: var(--color-text-gray);
+    margin-bottom: var(--spacing-xl);
+}
+
+.features-flex {
+    display: flex;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+}
+
+.feature-card {
+    background-color: var(--color-white);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-xlarge);
+    box-shadow: var(--shadow-small);
+    transition: var(--transition-normal);
+    animation: fadeInUp 0.6s ease;
+}
+
+.feature-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.feature-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.feature-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.feature-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-large);
+}
+
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto var(--spacing-lg);
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    font-size: 36px;
+    transition: var(--transition-normal);
+}
+
+.feature-card:hover .feature-icon {
+    transform: rotate(360deg) scale(1.1);
+}
+
+.feature-card h3 {
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-bold);
+    color: black;
+    margin-bottom: var(--spacing-lg);
+}
+
+.feature-card p {
+    font-size: var(--font-size-medium);
+    color: var(--color-text-gray);
+    line-height: 1.6;
+}
+
+/* Our Values Section */
+.our-values {
+    padding: var(--spacing-2xl) 0;
+    background-color: var(--color-white);
+    text-align: center;
+}
+
+.our-values h2 {
+    font-size: var(--font-size-xlarge);
+    font-weight: var(--font-weight-bold);
+    color: black;
+    margin-bottom: var(--spacing-sm);
+}
+
+.values-grid {
+    display: flex;
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-xl);
+}
+
+.value-card {
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-xlarge);
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    color: var(--color-white);
+    transition: var(--transition-normal);
+    animation: fadeIn 0.8s ease;
+}
+
+.value-card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.value-card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.value-card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.value-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-large);
+}
+
+.value-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto var(--spacing-lg);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+
+.value-card h3 {
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-sm);
+}
+
+.value-card p {
+    font-size: var(--font-size-normal);
+    opacity: 0.95;
+    line-height: 1.6;
+}
+
+/* Statistics Section */
+.statistics {
+    padding: var(--spacing-2xl) 0;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    color: var(--color-white);
+}
+
+.stats-flex {
+    display: flex;
+    gap: var(--spacing-xl);
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.stat-card {
+    text-align: center;
+    padding: var(--spacing-lg);
+    animation: fadeIn 1s ease;
+}
+
+.stat-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.stat-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.stat-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.stat-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.stat-number {
+    font-size: 56px;
+    font-weight: var(--font-weight-black);
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-white);
+}
+
+.stat-number::after {
+    content: '+';
+}
+
+.stat-label {
+    font-size: var(--font-size-medium);
+    opacity: 0.95;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Call to Action Section */
+.cta-section {
+    padding: var(--spacing-2xl) 0;
+    background-color: var(--color-bg-light);
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-size: var(--font-size-xlarge);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-dark);
+    margin-bottom: var(--spacing-md);
+}
+
+.cta-content p {
+    font-size: var(--font-size-large);
+    color: var(--color-text-gray);
+    margin-bottom: var(--spacing-xl);
+}
+
+.btn-large {
+    padding: 18px 40px;
+    font-size: var(--font-size-medium);
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-hero h1 {
+        font-size: 40px;
+    }
+
+    .about-hero p {
+        font-size: var(--font-size-medium);
+    }
+
+    .story-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+
+    .story-image {
+        order: -1;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-flex {
+        flex-direction: column;
+        gap: var(--spacing-lg);
+    }
+
+    .stat-number {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0 var(--spacing-md);
+    }
+
+    .about-hero {
+        padding: 80px var(--spacing-md);
+    }
+
+    .about-hero h1 {
+        font-size: 32px;
+    }
+
+    .our-story,
+    .why-choose-us,
+    .our-values,
+    .statistics,
+    .cta-section {
+        padding: var(--spacing-xl) 0;
+    }
+
+    .stats-flex {
+        flex-direction: column
+    }
+}

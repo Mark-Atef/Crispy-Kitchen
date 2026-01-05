@@ -1,0 +1,111 @@
+/* ==========================================
+   CSS VARIABLES - DESIGN SYSTEM
+   ========================================== */
+
+:root {
+    /* Colors */
+    --color-primary: #d62332;
+    --color-primary-dark: #b01d29;
+    --color-primary-light: #ff4757;
+
+    --color-secondary: black;
+    --color-secondary-light: #2c2c2c;
+
+    --color-text-dark: black;
+    --color-text-gray: #666666;
+    --color-text-light: #999999;
+    --color-white: #ffffff;
+
+    --color-bg-light: #f8f8f8;
+    --color-border: #e0e0e0;
+
+    /* Spacing */
+    --spacing-xs: 5px;
+    --spacing-sm: 10px;
+    --spacing-md: 20px;
+    --spacing-lg: 30px;
+    --spacing-xl: 50px;
+    --spacing-2xl: 80px;
+
+    /* Typography */
+    --font-size-small: 14px;
+    --font-size-normal: 16px;
+    --font-size-medium: 18px;
+    --font-size-large: 24px;
+    --font-size-xlarge: 36px;
+    --font-size-hero: 64px;
+
+    --font-weight-normal: 400;
+    --font-weight-medium: 600;
+    --font-weight-bold: 700;
+    --font-weight-black: 900;
+
+    /* Border Radius */
+    --radius-small: 4px;
+    --radius-medium: 8px;
+    --radius-large: 16px;
+    --radius-xlarge: 24px;
+
+    /* Shadows */
+    --shadow-small: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --shadow-medium: 0 4px 16px rgba(0, 0, 0, 0.1);
+    --shadow-large: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+
+    /* Layout */
+    --max-width-container: 1200px;
+    --navbar-height: 70px;
+}
+
+/* ==========================================
+   BUTTONS
+   ========================================== */
+
+.btn {
+  padding: 12px 30px;
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-medium);
+  border-radius: var(--radius-medium);
+  transition: var(--transition-fast);
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-medium);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.btn-small {
+  padding: 8px 16px;
+  font-size: var(--font-size-small);
+}
+
+/* Dark mode variables (optional for future) */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-bg-light: #1c1c1c;
+        --color-text-dark: #ffffff;
+    }
+}

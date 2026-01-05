@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Crispy Kitchen Menu - Browse our delicious selection of breakfast, lunch, dinner, and desserts." />
+  <meta name="author" content="Mark Yacoub">
+  <link rel="shortcut icon" href="images/download.ico" type="image/x-icon">
+  <title>Menu - Crispy Kitchen</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/mobile.css">
+</head>
+
+<body>
+  <!-- Page Loader (shows while page loads) -->
+  <div class="page-loader" id="pageLoader">
+    <div>
+      <div class="spinner"></div>
+      <p class="loader-text">Loading...</p>
+    </div>
+  </div>
+
+  <!-- Skip to Content Link (accessibility) -->
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+  <header>
+    <nav class="navbar">
+      <div class="nav-logo">
+        <a href="index.html">Crispy Kitchen</a>
+      </div>
+
+      <div class="nav-links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </div>
+
+      <!--  Hamburger Icon -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Cart Button -->
+      <div class="nav-cart">
+        <button class="cart-btn" id="cartBtn" aria-label="Shopping cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobileMenu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Mobile Menu Background Overlay -->
+  <div class="mobile-overlay-bg" id="mobileOverlay"></div>
+
+
+
+
+  <!-- main content -->
+
+  <main id="main-content">
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+      <div class="contact-hero-content">
+        <h1>Get In Touch</h1>
+        <p>We'd love to hear from you. Send us a message!</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-wrapper">
+
+          <!-- Contact Information -->
+          <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p class="contact-intro">
+              Have a question or want to make a reservation? We're here to help!
+            </p>
+
+            <div class="info-items">
+              <div class="info-item">
+                <div class="info-icon">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="info-content">
+                  <h3>Phone</h3>
+                  <p>(555) 123-4567</p>
+                  <p class="info-note">Mon-Fri, 9am-10pm</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="info-content">
+                  <h3>Email</h3>
+                  <p>info@crispykitchen.com</p>
+                  <p class="info-note">We'll respond within 24 hours</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="info-content">
+                  <h3>Address</h3>
+                  <p>123 Food Street</p>
+                  <p>New York, NY 10001</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon">
+                  <i class="fa-solid fa-clock"></i>
+                </div>
+                <div class="info-content">
+                  <h3>Opening Hours</h3>
+                  <p>Mon-Thu: 11am - 10pm</p>
+                  <p>Fri-Sat: 11am - 11pm</p>
+                  <p>Sunday: 12pm - 9pm</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="social-links">
+              <h3>Follow Us</h3>
+              <div class="social-icons">
+                <a href="#" aria-label="Facebook" class="social-icon">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="#" aria-label="Instagram" class="social-icon">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" aria-label="Twitter" class="social-icon">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#" aria-label="YouTube" class="social-icon">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-wrapper">
+            <h2>Send Us a Message</h2>
+            <form class="contact-form" id="contactForm">
+
+              <div class="form-group">
+                <label for="name">
+                  <i class="fa-solid fa-user"></i>
+                  Full Name
+                </label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required minlength="2" />
+                <span class="error-message" id="nameError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="email">
+                  <i class="fa-solid fa-envelope"></i>
+                  Email Address
+                </label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required />
+                <span class="error-message" id="emailError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">
+                  <i class="fa-solid fa-phone"></i>
+                  Phone Number (Optional)
+                </label>
+                <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" />
+              </div>
+
+              <div class="form-group">
+                <label for="subject">
+                  <i class="fa-solid fa-tag"></i>
+                  Subject
+                </label>
+                <select id="subject" name="subject" required>
+                  <option value="">Select a subject</option>
+                  <option value="reservation">Reservation</option>
+                  <option value="inquiry">General Inquiry</option>
+                  <option value="feedback">Feedback</option>
+                  <option value="catering">Catering Request</option>
+                  <option value="other">Other</option>
+                </select>
+                <span class="error-message" id="subjectError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="message">
+                  <i class="fa-solid fa-message"></i>
+                  Your Message
+                </label>
+                <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required
+                  minlength="10"></textarea>
+                <span class="error-message" id="messageError"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit">
+                <i class="fa-solid fa-paper-plane"></i>
+                Send Message
+              </button>
+            </form>
+
+            <!-- Success/Error Messages -->
+            <div class="form-message success-message" id="successMessage" style="display: none;">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>Thank you! Your message has been sent successfully. We'll get back to you soon.</p>
+            </div>
+
+            <div class="form-message error-message-box" id="errorMessage" style="display: none;">
+              <i class="fa-solid fa-circle-xmark"></i>
+              <p>Oops! Something went wrong. Please try again.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+      <div class="container">
+        <h2>Find Us Here</h2>
+        <div class="map-wrapper">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00369368459391!3d40.74844097932847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" title="Crispy Kitchen Location"></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Crispy Kitchen</h3>
+        <p>Delicious food made with Love.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contact Info</h4>
+        <p><i class="fa-solid fa-phone"></i> (555) 123-4567</p>
+        <p><i class="fa-solid fa-envelope"></i> info@crispykitchen.com</p>
+        <p><i class="fa-solid fa-location-dot"></i> 123 Food Street, City</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Crispy Kitchen. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Cart Sidebar -->
+  <aside class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h2><i class="fa-solid fa-cart-shopping"></i> Shopping Cart</h2>
+      <button class="close-cart" id="closeCart" aria-label="Close cart">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="cart-items" id="cartItems">
+      <p class="empty-cart">Your cart is empty</p>
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span class="total-price" id="totalPrice">$0.00</span>
+      </div>
+      <button class="btn btn-primary btn-checkout">
+        <i class="fa-solid fa-credit-card"></i>
+        Checkout
+      </button>
+    </div>
+  </aside>
+
+  <!-- Overlay -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- JavaScript -->
+  <script src="js/cart.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/mobile.js"></script>
+
+  <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+</body>
+
+</html>
