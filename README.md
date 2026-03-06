@@ -2,7 +2,7 @@
 
 A modern, fully responsive restaurant website featuring an interactive shopping cart, a dynamic menu with live API integration, and real-time form validation. Built entirely with vanilla JavaScript, HTML5, and CSS3 — no frameworks, no build tools.
 
-🔗 **[Live Demo](https://mark-atef.github.io/Crispy-Kitchen/)** &nbsp;|&nbsp; 🧾 **[GitHub Repository](https://github.com/Mark-Atef/Crispy-Kitchen)**
+🔗 **[Live Demo](https://mark-atef.github.io/Crispy-Kitchen/)** &nbsp;|&nbsp; 🧾 **[GitHub Repository](https://github.com/Mark-Atef/Crispy-Kitchen.git)**
 
 ---
 
